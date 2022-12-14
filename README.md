@@ -3,4 +3,4 @@ The scripts above were used to query data on Interchain Accounts (ICA) from the 
 
 As of creating the report, Stride is the only blockchain in production that's using Interchain Accounts and Interchain Queries.
 
-Data sourced from: [Numia](numia.xyz)
+Data sourced from: [Numia](https://numia.xyz/)
