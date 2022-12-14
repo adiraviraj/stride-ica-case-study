@@ -8,7 +8,7 @@ INNER JOIN `immaculate-355716.stride_1.event_attributes` ea2
 ON ea.tx_id = ea2.tx_id
 INNER JOIN `immaculate-355716.stride_1.blocks` b
 ON CAST(ea.block_height AS STRING) = b.block_height
-WHERE ea.attribute_value = '/Stridelabs.stride.stakeibc.MsgLiquidStake' -- to filter for liquid stake txs on stride
+WHERE ea.attribute_value IN ('/Stridelabs.stride.stakeibc.MsgLiquidStake', '/stride.stakeibc.MsgLiquidStake') -- to filter for liquid stake txs on stride
   AND ea2.event_type = 'coin_received'
   AND ea2.attribute_key = 'amount'
   AND ea2.event_index = 11
